@@ -16,10 +16,11 @@
   }
 ```
 
-## deploy 部署
+### deploy 部署
 
   - 手动部署
-    >新建 deploy.sh文件，配置部署信息，运行：npm run deploy
+    > 新建 deploy.sh文件，配置部署信息，运行：npm run deploy
 
   - 自动部署
-    >新建 .github/workflows/deploy.yml 文件，配置部署信息，每次 git push后，自定打包部署到GitHub
+    > 新建 .github/workflows/deploy.yml 文件，配置部署信息，每次 git push后，自动打包部署到GitHub的gh-pages分支上
+
