@@ -6,18 +6,28 @@ on:
       - master
 
 jobs:
-  deploy:
+  # 任务名称
+  build-and-deploy:
+    # 任务运行的容器类型（虚拟机环境）
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      # 步骤名称
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js v16.x
+        uses: actions/setup-node@v3
         with:
           node-version: 16
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Build
         run: pnpm run docs:build
 
       - name: Deploy
+        # 构建发布 Github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
