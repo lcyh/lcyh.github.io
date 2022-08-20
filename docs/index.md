@@ -4,10 +4,10 @@ layout: home
 hero:
   name: lc的博客
   text: 随便写点啥.
-  tagline: 帅气又迷人的小月
+  tagline: 帅气的小伙
   image:
     src: /logo.png
-    alt: Kitty
+    alt: Colin
   actions:
     - theme: brand
       text: 快来快来
