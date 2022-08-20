@@ -21,10 +21,10 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build
-        run: pnpm run docs:build
+        run: npm run docs:build
 
       - name: Deploy
         # 构建发布 Github pages
