@@ -6,7 +6,7 @@ set -e
 # 构建
 npm run docs:build
 
-# 进入待发布的目录
+# 进入待发布的目录,最终发布 dist文件夹里所有的文件，包含有index.html
 cd docs/.vitepress/dist
 
 # 如果是发布到自定义域名

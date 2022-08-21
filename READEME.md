@@ -19,7 +19,7 @@
 ### deploy 部署
 
   - 手动部署
-    > 新建 deploy.sh文件，配置部署信息，运行：npm run deploy
+    > 新建 deploy.sh文件，配置部署信息，运行：npm run deploy,最终发布 ./docs/dist文件夹里所有的文件，包含有index.html
 
   - 自动部署
     > 新建 .github/workflows/deploy.yml 文件，配置部署信息，每次 git push后，自动打包部署到GitHub的gh-pages分支上
